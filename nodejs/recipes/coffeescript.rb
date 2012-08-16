@@ -1,8 +1,8 @@
-include_recipe "nodejs::npm"
+include_recipe "nodejs"
 
 
 bash "install coffee-script" do
-  user "root"	
+  user "root"   
   code <<-EOH
     sudo npm install -g coffee-script    
   EOH
